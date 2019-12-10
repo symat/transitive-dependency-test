@@ -1,0 +1,14 @@
+
+repositories {
+  mavenLocal()
+}
+
+project.version="1.0-SNAPSHOT"
+
+apply plugin: "java"
+
+dependencies {
+  compile "com.symat.dependencies:A:1.0-SNAPSHOT"
+  compile "com.symat.dependencies:B:1.0-SNAPSHOT"
+  compile "com.symat.dependencies:D:1.0-SNAPSHOT"
+}

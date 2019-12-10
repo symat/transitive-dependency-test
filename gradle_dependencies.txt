@@ -1,0 +1,131 @@
+
+> Configure project :
+The compile configuration has been deprecated for dependency declaration. This will fail with an error in Gradle 7.0. Please use the implementation configuration instead.
+	at build_5dbcd2b3vorgfn14v3620os9x$_run_closure2.doCall(/Users/szalay-bekomate/git/CDPD-6473/gradle-test/build.gradle:11)
+	(Run with --stacktrace to get the full stack trace of this deprecation warning.)
+
+> Task :dependencies
+
+------------------------------------------------------------
+Root project
+------------------------------------------------------------
+
+annotationProcessor - Annotation processors and their dependencies for source set 'main'.
+No dependencies
+
+apiElements - API elements for main. (n)
+No dependencies
+
+archives - Configuration for archive artifacts.
+No dependencies
+
+compileClasspath - Compile classpath for source set 'main'.
++--- com.symat.dependencies:A:1.0-SNAPSHOT
+|    \--- com.google.guava:guava:11.0.2 -> 27.0.1-jre
+|         +--- com.google.guava:failureaccess:1.0.1
+|         +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|         +--- com.google.code.findbugs:jsr305:3.0.2
+|         +--- org.checkerframework:checker-qual:2.5.2
+|         +--- com.google.errorprone:error_prone_annotations:2.2.0
+|         +--- com.google.j2objc:j2objc-annotations:1.1
+|         \--- org.codehaus.mojo:animal-sniffer-annotations:1.17
++--- com.symat.dependencies:B:1.0-SNAPSHOT
+|    \--- com.symat.dependencies:C:1.0-SNAPSHOT
+|         \--- com.google.guava:guava:27.0.1-jre (*)
+\--- com.symat.dependencies:D:1.0-SNAPSHOT
+     \--- com.symat.dependencies:C:1.0-SNAPSHOT (*)
+
+compileOnly - Compile only dependencies for source set 'main'. (n)
+No dependencies
+
+default - Configuration for default artifacts.
++--- com.symat.dependencies:A:1.0-SNAPSHOT
+|    \--- com.google.guava:guava:11.0.2 -> 27.0.1-jre
+|         +--- com.google.guava:failureaccess:1.0.1
+|         +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|         +--- com.google.code.findbugs:jsr305:3.0.2
+|         +--- org.checkerframework:checker-qual:2.5.2
+|         +--- com.google.errorprone:error_prone_annotations:2.2.0
+|         +--- com.google.j2objc:j2objc-annotations:1.1
+|         \--- org.codehaus.mojo:animal-sniffer-annotations:1.17
++--- com.symat.dependencies:B:1.0-SNAPSHOT
+|    \--- com.symat.dependencies:C:1.0-SNAPSHOT
+|         \--- com.google.guava:guava:27.0.1-jre (*)
+\--- com.symat.dependencies:D:1.0-SNAPSHOT
+     \--- com.symat.dependencies:C:1.0-SNAPSHOT (*)
+
+implementation - Implementation only dependencies for source set 'main'. (n)
+No dependencies
+
+runtimeClasspath - Runtime classpath of source set 'main'.
++--- com.symat.dependencies:A:1.0-SNAPSHOT
+|    \--- com.google.guava:guava:11.0.2 -> 27.0.1-jre
+|         +--- com.google.guava:failureaccess:1.0.1
+|         +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|         +--- com.google.code.findbugs:jsr305:3.0.2
+|         +--- org.checkerframework:checker-qual:2.5.2
+|         +--- com.google.errorprone:error_prone_annotations:2.2.0
+|         +--- com.google.j2objc:j2objc-annotations:1.1
+|         \--- org.codehaus.mojo:animal-sniffer-annotations:1.17
++--- com.symat.dependencies:B:1.0-SNAPSHOT
+|    \--- com.symat.dependencies:C:1.0-SNAPSHOT
+|         \--- com.google.guava:guava:27.0.1-jre (*)
+\--- com.symat.dependencies:D:1.0-SNAPSHOT
+     \--- com.symat.dependencies:C:1.0-SNAPSHOT (*)
+
+runtimeElements - Elements of runtime for main. (n)
+No dependencies
+
+runtimeOnly - Runtime only dependencies for source set 'main'. (n)
+No dependencies
+
+testAnnotationProcessor - Annotation processors and their dependencies for source set 'test'.
+No dependencies
+
+testCompileClasspath - Compile classpath for source set 'test'.
++--- com.symat.dependencies:A:1.0-SNAPSHOT
+|    \--- com.google.guava:guava:11.0.2 -> 27.0.1-jre
+|         +--- com.google.guava:failureaccess:1.0.1
+|         +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|         +--- com.google.code.findbugs:jsr305:3.0.2
+|         +--- org.checkerframework:checker-qual:2.5.2
+|         +--- com.google.errorprone:error_prone_annotations:2.2.0
+|         +--- com.google.j2objc:j2objc-annotations:1.1
+|         \--- org.codehaus.mojo:animal-sniffer-annotations:1.17
++--- com.symat.dependencies:B:1.0-SNAPSHOT
+|    \--- com.symat.dependencies:C:1.0-SNAPSHOT
+|         \--- com.google.guava:guava:27.0.1-jre (*)
+\--- com.symat.dependencies:D:1.0-SNAPSHOT
+     \--- com.symat.dependencies:C:1.0-SNAPSHOT (*)
+
+testCompileOnly - Compile only dependencies for source set 'test'. (n)
+No dependencies
+
+testImplementation - Implementation only dependencies for source set 'test'. (n)
+No dependencies
+
+testRuntimeClasspath - Runtime classpath of source set 'test'.
++--- com.symat.dependencies:A:1.0-SNAPSHOT
+|    \--- com.google.guava:guava:11.0.2 -> 27.0.1-jre
+|         +--- com.google.guava:failureaccess:1.0.1
+|         +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|         +--- com.google.code.findbugs:jsr305:3.0.2
+|         +--- org.checkerframework:checker-qual:2.5.2
+|         +--- com.google.errorprone:error_prone_annotations:2.2.0
+|         +--- com.google.j2objc:j2objc-annotations:1.1
+|         \--- org.codehaus.mojo:animal-sniffer-annotations:1.17
++--- com.symat.dependencies:B:1.0-SNAPSHOT
+|    \--- com.symat.dependencies:C:1.0-SNAPSHOT
+|         \--- com.google.guava:guava:27.0.1-jre (*)
+\--- com.symat.dependencies:D:1.0-SNAPSHOT
+     \--- com.symat.dependencies:C:1.0-SNAPSHOT (*)
+
+testRuntimeOnly - Runtime only dependencies for source set 'test'. (n)
+No dependencies
+
+(*) - dependencies omitted (listed previously)
+
+A web-based, searchable dependency report is available by adding the --scan option.
+
+BUILD SUCCESSFUL in 586ms
+1 actionable task: 1 executed

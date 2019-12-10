@@ -1,0 +1,42 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.symat.maventest:maventest >--------------------
+[INFO] Building Dependency test 1.0-SNAPSHOT
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ maventest ---
+[INFO] com.symat.maventest:maventest:pom:1.0-SNAPSHOT
+[INFO] +- com.symat.dependencies:D:jar:1.0-SNAPSHOT:compile
+[INFO] |  \- com.symat.dependencies:C:jar:1.0-SNAPSHOT:compile
+[INFO] +- com.symat.dependencies:A:jar:1.0-SNAPSHOT:compile
+[INFO] |  \- com.google.guava:guava:jar:11.0.2:compile
+[INFO] |     \- com.google.code.findbugs:jsr305:jar:1.3.9:compile
+[INFO] \- com.symat.dependencies:B:jar:1.0-SNAPSHOT:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.871 s
+[INFO] Finished at: 2019-12-10T18:13:49+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.symat.maventest:maventest >--------------------
+[INFO] Building Dependency test 1.0-SNAPSHOT
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:resolve (default-cli) @ maventest ---
+[INFO] 
+[INFO] The following files have been resolved:
+[INFO]    com.symat.dependencies:A:jar:1.0-SNAPSHOT:compile
+[INFO]    com.google.guava:guava:jar:11.0.2:compile
+[INFO]    com.symat.dependencies:D:jar:1.0-SNAPSHOT:compile
+[INFO]    com.symat.dependencies:C:jar:1.0-SNAPSHOT:compile
+[INFO]    com.google.code.findbugs:jsr305:jar:1.3.9:compile
+[INFO]    com.symat.dependencies:B:jar:1.0-SNAPSHOT:compile
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.766 s
+[INFO] Finished at: 2019-12-10T18:13:51+01:00
+[INFO] ------------------------------------------------------------------------
