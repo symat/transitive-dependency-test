@@ -8,11 +8,11 @@ Given the following dependency graph, what do you think, which version of guava 
       |   \
       |    ---------->  (B)   ---- exclude guava 27 --->  (C)   ------->  (guava 27)
       \
-       -------------->  (D)   ------->  (C)    
+       -------------->  (D)   ------->  (C)   ------->  (guava 27)    
 
 ```
 
-It turns out, that if we use Maven, then we got guava 11. Maven seems to apply the exclusion of guava 27, even when it gets imported as a transitive dependency.
+It turns out, that if we use Maven, then we got guava 11. Maven seems to apply the exclusion of guava 27, even when it gets imported transitively through a path where the exclusion was not defined.
 
 However, when we use Gradle, then we end up with guava 27 on the classpath. 
 
